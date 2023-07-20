@@ -9,7 +9,30 @@
 
 <body>
 	<form action="" id="questions" method="post" name="questions">
-		<input type="submit">
+		<fieldset>
+			<legend>What is your favorite color?</legend>
+			<input type="checkbox" name="favcolor" value="blue" id="blue">
+			<label for="blue">Blue</label><br>
+			<input type="checkbox" name="favcolor" value="red" id="red" checked>
+			<label for="red">Red</label><br>
+			<input type="checkbox" name="favcolor" value="green" id="green">
+			<label for="green">Green</label><br>
+			<input type="submit">
+		</fieldset><br>
+		<label for="pizza">What is your favorite pizza topping?</label>
+		<select name="pizza" id="pizza" multiple size="7">
+			<optgroup label="veggies">
+				<option value="mushroom">mushroom</option>
+				<option value="onions">onions</option>
+			</optgroup>
+			<optgroup label="meats">
+				<option value="pepperoni">pepperoni</option>
+				<option value="sausage">sausage</option>
+				<option value="beef">beef</option>
+			</optgroup>
+			
+		</select>
+		
 	</form>
 </body>
 </html>
